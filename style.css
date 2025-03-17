@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: whitesmoke;
+}
+#ramen-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.ramen-card {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px;
+    cursor: pointer;
+}
+.ramen-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+#ramen-detail {
+    margin-top: 20px;
+    background: white;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px;
+}

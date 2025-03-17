@@ -1,0 +1,31 @@
+const ramens = [
+    { id: 1, name: "Shoyu Ramen", restaurant: "Ichiran", image: "shoyu.jpg", rating: 5, comment: "Delicious!" },
+    { id: 2, name: "Miso Ramen", restaurant: "Menya", image: "miso.jpg", rating: 4, comment: "Very flavorful!" },
+    { id: 3, name: "Tonkotsu Ramen", restaurant: "Ramen-ya", image: "Tonkotsu.jpg" }
+ ];
+
+
+function displayRamens() {
+    const menu = document.getElementById("ramen-menu");
+    menu.innerHTML = "";
+
+    ramens.forEach(ramen => {
+       const image = document.createElement("img");
+        image.src = ramen.image;
+        image.alt = ramen.name;
+        image.addEventListener("click", () => handleClick(ramen));
+        menu.appendChild(img);
+    });
+}
+
+
+function handleClick(ramen) {
+    document.getElementById("detail-name").textContent = ramen.name;
+    document.getElementById("detail-restaurant").textContent = ramen.restaurant;
+
+}
+
+function addSubmitListener() {
+
+
+}

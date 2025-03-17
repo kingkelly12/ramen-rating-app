@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     background-color: whitesmoke;
 }
@@ -12,13 +12,13 @@ body {
 .ramen-card {
     background: white;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 3px 3px 5px;
     cursor: pointer;
 }
 .ramen-card img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
 }
 #ramen-detail {
@@ -26,6 +26,6 @@ body {
     background: white;
     padding: 15px;
     display: inline-block;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 3px 3px 5px;
 }

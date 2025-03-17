@@ -35,14 +35,12 @@ function addSubmitListener() {
             name: document.getElementById("new-name").value,
             restaurant: document.getElementById("new-restaurant").value,
             image: document.getElementById("new-image").value,
-            rating: document.getElementById("new-rating").value || "N/A",
-            comment: document.getElementById("new-comment").value || "N/A"
     };
 
-// Add to array 
+// Adding a new element to ramens array 
 ramens.push(newRamen);
 
-// Update DOM
+
 displayRamens();
 
 // Clear form
@@ -50,7 +48,7 @@ form.reset();
 });
 }
 
-// Initialize app
+// function to initialize app
 function main() {
     displayRamens();
     addSubmitListener();

@@ -26,6 +26,35 @@ function handleClick(ramen) {
 }
 
 function addSubmitListener() {
+    const form = document.getElementById("new-ramen-form");
+    
+    form.addEventListener("submit", event => {
 
+        const newRamen = {
+            id: ramens.length + 1,
+            name: document.getElementById("new-name").value,
+            restaurant: document.getElementById("new-restaurant").value,
+            image: document.getElementById("new-image").value,
+            rating: document.getElementById("new-rating").value || "N/A",
+            comment: document.getElementById("new-comment").value || "N/A"
+    };
 
+// Add to array 
+ramens.push(newRamen);
+
+// Update DOM
+displayRamens();
+
+// Clear form
+form.reset();
+});
 }
+
+// Initialize app
+function main() {
+    displayRamens();
+    addSubmitListener();
+}
+
+// Ensure the DOM is fully loaded before main function runs
+document.addEventListener("DOMContentLoaded", main);

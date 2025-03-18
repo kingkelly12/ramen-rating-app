@@ -12,38 +12,33 @@
         <h1>Ramen Rater</h1>
     </div>
 
-<div id="ramen-menu"></div>
+    <br>
 
+    <div id="ramen-menu"></div>
 
-<div id="img">
-    <img src="">
-</div>
+    <div id="ramen-detail">
+        <div id="detail-name"></div>
+        <div id="detail-restaurant"></div>
+    </div>
 
-<div id="ramen-detail"></div>
+    <br>
 
-<div id="detail-name"></div>
+    <div id="new-ramen-form">
+        <button id="create-button">Add Ramen</button>
+        <label for="name">Name:</label>
+        <input type="text" id="new-name">
+        <label for="restaurant">Restaurant:</label>
+        <input type="text" id="new-restaurant">
+        <label for="image">Image:</label>
+        <input type="text" id="new-image">
+        <label for="rating">Rating:</label>
+        <input type="number" id="new-rating" min="1" max="10">
+        <label for="comment">Comment:</label>
+        <textarea id="new-comment"></textarea>
+        <button id="create-button">Create</button>
+    </div>
 
-<div id="detail-restaurant"></div>
-
-
-<div id="new-ramen-form">
-    <h2>Add New Ramen</h2>
-    <label for="name">Name:</label>
-    <input type="text" id="new-name">
-    <label for="restaurant">Restaurant:</label>
-    <input type="text" id="new-restaurant">
-    <label for="image">Image:</label>
-    <input type="file" id="new-image">
-    <label for="rating">Rating:</label>
-    <input type="number" id="new-rating" min="1" max="10">
-    <label for="comment">Comment:</label>
-    <textarea id="new-comment"></textarea>
-    <button id="create-button">Create</button>
-</div>
-
+    <script src="./index.js"></script>
 
 </body>
-
-<script src="index.js"></script>
-
 </html>

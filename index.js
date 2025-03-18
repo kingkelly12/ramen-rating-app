@@ -22,13 +22,14 @@ function displayRamens() {
 function handleClick(ramen) {
     document.getElementById("detail-name").textContent = ramen.name;
     document.getElementById("detail-restaurant").textContent = ramen.restaurant;
+    
 
 }
 
 function addSubmitListener() {
     const form = document.getElementById("new-ramen-form");
     
-    form.addEventListener("submit", event => {
+    form.addEventListener("create", click => {
 
         const newRamen = {
             id: ramens.length + 1,
